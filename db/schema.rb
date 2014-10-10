@@ -301,12 +301,14 @@ ActiveRecord::Schema.define(version: 20141001203854) do
   end
 
   create_table "users", force: true do |t|
-    t.string   "email",            null: false
-    t.string   "crypted_password", null: false
-    t.string   "salt",             null: false
+    t.string   "email",                        null: false
+    t.string   "crypted_password",             null: false
+    t.string   "salt",                         null: false
     t.boolean  "rol"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "nombre",           limit: nil
+    t.string   "documento",        limit: nil
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
