@@ -53,15 +53,6 @@ centros.each do | centro |
 		
 end
 
-
-tipo_salidas = [{nombre: "Pedagogica"}, {nombre: "Recreativa"}, {nombre: "Cultural"}, {nombre: "Social"}, {nombre: "Sociocultural"}]
-
-tipo_salidas.each do | tipo_salida |
-
-	TipoSalida.where(tipo_salida).first_or_create		
-end
-
-
 tiporiesgos = [{nombre: "Clase I, de Riesgo Mínimo"}, {nombre: "Clase II, de Riesgo Bajo"}, {nombre: "Clase III, de Riesgo Medio"}, {nombre: "Clase IV, de Riesgo Alto"}, {nombre: "Clase V, de Riesgo Máximo"}]
 
 tiporiesgos.each do | tiporiesgo |
